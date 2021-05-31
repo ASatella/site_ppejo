@@ -1,0 +1,224 @@
+/*
+style.css
+
+Feuille de style pour gérer l'apparence du site
+ */
+
+@font-face /* font-face permet de définir une police d'écriture pour le site qui ne serait pas sur l'ordinateur de l'utilisateur */
+{
+    font-family: Metropolis;
+    src: url("police/metropolis.ttf") format("truetype");
+    src: url("police/metropolis.woff") format("woff");
+}
+
+* /* applique à tout le site la police d'écriture définie avant avec le font-face */
+{
+    font-family: Metropolis,sans-serif;
+}
+
+body /* applique une couleur de fond et d'écriture pour tout ce qui est contenu dans la balise body */
+{
+    margin: 0;
+    background-color: white;
+    color: #444F64;
+}
+
+.mot_bleu /* applique la couleur bleue pour la balise ayant la classe "mot_bleu" */
+{
+    color: #0181C8;
+}
+
+figure /* applique une bordure de couleur bleue pour l'image des j.o. */
+{
+    border: 2px #0181C8 solid;
+    border-radius: 7px;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+h1
+{
+    font-family: Corbel,sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+h2
+{
+    color: black;
+    font-weight: bold;
+    font-family: Corbel,sans-serif;
+    font-size: 40px;
+}
+
+.nav_liens a, a:visited /* applique une couleur grise foncée et enlève le soulignement des liens */
+{
+    text-decoration: none;
+    color: #444F64;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    float: left;
+}
+
+li a
+{
+    padding: 15px;
+}
+
+#logo_accueil /* applique une apparence pour le logo dans la barre de navigation */
+{
+    width: 28px;
+    border: 2px #0181C8 solid;
+    border-radius: 7px;
+}
+
+.site /* permet de créer une boite flex qui englobera tout les éléments flex */
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 66px;
+}
+
+.corps /* créer un élément flex pour le corps du site qui se placera dans celui créer dans .site */
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.section
+{
+    border-top: 2px #0181C8 solid;
+}
+
+nav /* créer un élément flex qui se placera dans celui créer dans .site et servira à accueillir nos liens */
+ {
+     display: flex;
+     flex-direction: row;
+     background-color: rgba(220,220,220,1);
+     border-bottom: 2px #0181C8 solid;
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     width: 100%;
+ }
+
+.nav_liens
+{
+    flex: auto;
+}
+
+#logo_connexion
+{
+    height: 34px;
+    width: 34px;
+}
+
+header
+{
+    text-align: center;
+    background: url("img/fond_paris.jpg") fixed no-repeat;
+    background-size: 100%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-bottom: 1px #0181C8 solid;
+}
+
+.sous-section
+{
+    margin: 0 auto;
+    width: 85%;
+}
+
+footer
+{
+    text-align: center;
+    border-top: 1px #0181C8 solid;
+}
+
+#champion1
+{
+    width:40%;
+}
+
+#champion2
+{
+    width:40%;
+    height: 25%;
+}
+
+#champion3
+{
+    width:40%;
+}
+
+#logo_header
+{
+    height: 150px;
+    width: 150px;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+td, th
+{
+    text-align: center;
+    border: 1px solid;
+    padding: 10px;
+}
+
+ tr:nth-child(even) /* change la couleur d'une case sur deux pour les cases paires du tableau */
+ {
+     background-color: #f9f9f9
+ }
+ 
+ th
+ {
+     background-color: #f2f2f2;
+ }
+ 
+hr /* change la couleur et l'épaisseur des barres horizontales */
+ {
+    border: 2px #0181C8 solid;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+ }
+
+.formulaire
+{
+    margin-left: 40%;
+}
+
+form p
+{
+    font-size: 24px;
+}
+
+form input
+{
+    margin-bottom: 2%;
+    size: 50px;
+}
+
+form select
+{
+    margin-bottom: 2%;
+    size: 50px;
+}
